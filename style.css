@@ -1,0 +1,19 @@
+body{
+    background-color: teal;
+    border-top: 0em;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+main{
+    background-color: whitesmoke;
+    padding-top: 5em;
+    padding-left: 5em;
+    padding-right: 5em;
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
+}
+h1{
+    text-align: center;
+}
+#portrait{
+    align-items: center;
+}
