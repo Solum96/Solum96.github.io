@@ -1,19 +1,107 @@
 body{
+    font-family: Arial, Helvetica, sans-serif;
     background-color: teal;
     border-top: 0em;
     padding-left: 5%;
     padding-right: 5%;
 }
-main{
-    background-color: whitesmoke;
-    padding-top: 5em;
-    padding-left: 5em;
-    padding-right: 5em;
-    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
-}
+
 h1{
     text-align: center;
 }
-#portrait{
+
+a{
+    color: rgb(21, 80, 80);
+}
+
+.main {
+    background: whitesmoke;
+
     align-items: center;
+    padding: 0.7em;
+    margin: auto;
+    width: 100%;
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
+}
+
+.portrait{
+    text-align: center;
+    grid-area: portrait;
+}
+
+#picture{
+    max-width: 300px; 
+    border-radius: 90%;
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
+}
+
+section{
+    padding: 0.5em;
+}
+
+.resume {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 300px;
+    grid-gap: 1em;
+    grid-template-areas:
+            "portrait portrait portrait"
+            "title title title"
+            "contact contact contact"
+            "about about about"
+            "highlights highlights highlights"
+            "languages languages languages"
+            "education education education"
+            "other other other";
+}
+
+.portrait{grid-area: portrait;}
+.about{grid-area: about;}
+.contact{grid-area: contact;}
+.highlights{grid-area: highlights;}
+.projects{grid-area: projects;}
+.title{grid-area: title;}
+.languages{grid-area: languages;}
+.education{grid-area: education;}
+.other{grid-area: other;}
+
+@media (min-aspect-ratio: 1/1) { 
+    .resume {
+        grid-template-areas: 
+            "title title title"
+            "about about portrait"
+            "about about highlights"
+            "contact contact contact"
+            "education languages other";
+    }
+    .edubox{
+        border-color: gray;
+        border-style: solid;
+        border-radius: 20px;
+        margin: 0.5em;
+        padding: 0.5em;
+        padding-top: 0em;
+        padding-bottom: 0em;
+        box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .main {
+        min-width: 800px;
+        max-width: 70%;
+    }
+}
+
+.projects{
+    grid-template-rows: 2fr;
+    grid-gap: 0.5em;
+}
+
+.highlight{
+    border-radius: 50px 50px;
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
+    margin: 0.5em;
+    padding: 0.5em;
+    border: 1px solid rgb(65, 65, 65);
 }

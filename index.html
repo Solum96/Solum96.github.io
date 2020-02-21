@@ -5,33 +5,48 @@
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
     <body>
-        <main>
-            <h1>Nils Lundell</h1>
-            <img id="portrait" src="bild.jpg" alt="Nils Lundell"> <!-- TODO: Lägg till bild. -->
-            <div>
-                <h2>About</h2>
-                <p>Mitt namn är Nils Lundell och jag läser .NetUtveckling på IT-Högskolan</p> <!-- Skriv på engelska -->
-            </div>
-            <div>
-                <h2>Contact</h2>
-                <p>
-                    <a href="mailto:nils.solumfaeste@gmail.com">nils.solumfaeste@gmail.com</a>
-                </p>
-                <p>
-                    <a href="https://www.linkedin.com/in/nils-lundell-0180b41a3/">LinkedIn</a>
-                </p>
-                <p>
-                    <a href="https://github.com/Solum96">GitHub</a>
-                </p>
-            </div>
-            <div id="projects">
-                <h2>Projects</h2>
-                <div class="highlight">LD44</div>
-                <div class="highlight">GGJ2020</div>  <!-- Lägg till länkar till github -->
-                <div class="highlight">2DStabbyStab</div>
-            </div>
-            <div>
-                <div>
+        <main class="main">
+            <div class="resume">
+                <section class="portrait">
+                    <img id="picture" src="portrait.jpg" alt="Nils Lundell"> <!-- TODO: Lägg till bild. -->
+                </section>
+                <section class="title">
+                    <h1>Nils Lundell</h1>
+                </section>
+                <section class="about">
+                    <h2>About</h2>
+                    <p>Just nu studerar jag .NET-utveckling och strävar efter att bli en bra fullstack-utvecklare!
+                        Som elev på IT-Högskolan har jag fått jobba med i stort sett hela .NET-stacken och skapat 
+                        en stabil grund med programmering i C# och databashantering med SQL, MongoDB och CosmosDB. 
+                        Jag och en klasskamrat har även gjort ett API med MVC i ASP.NET core och just nu lär vi oss HTML, CSS och JavaScript/TypeScript. </p>
+                        
+                       <p>På fritiden så tycker jag om att skapa spel och appar. Främst har jag jobbat i Unity på min fritid
+                        men nu vill jag lägga mer fokus på apputveckling och bli kunnig inom Xamarin.
+                        Jag drivs mycket av att få skapa och älskar att analysera program och appar och tar mycket lärdom av deras designval. </p>
+                        
+                        <p>I framtiden vill jag gärna hitta ett arbete där jag får bidra med min kompetens och få utrymme att kunna förbättra mig själv!</p>
+                        
+                        <p>Några av mina projekt finns på min GitHub och fler tillägg kommer att dyka upp i framtiden!</p>
+                </section>
+                <section class="contact">
+                    <h2>Contact</h2>
+                    <p>
+                        <a href="mailto:nils.solumfaeste@gmail.com">nils.solumfaeste@gmail.com</a>
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/nils-lundell-0180b41a3/">LinkedIn</a>
+                    </p>
+                    <p>
+                        <a href="https://github.com/Solum96">GitHub</a>
+                    </p>
+                </section>
+                <section class="highlights">    
+                    <h2>Projects</h2>
+                    <div class="highlight"><a href="https://github.com/Solum96/LD44">LD44</a></div>
+                    <div class="highlight"><a href="https://github.com/Solum96/GGJ2020">GGJ2020</a></div>  <!-- Lägg till länkar till github -->
+                    <div class="highlight"><a href="https://github.com/Solum96/2DStabbyStab">2DStabbyStab</a></div>
+                </section>
+                <section class="languages">
                     <h2>Languages</h2>
                     <ul>
                         <li>C#</li>
@@ -40,27 +55,25 @@
                         <li>MongoDB</li>
                         <li>Azure</li>
                     </ul>
-                </div>
-                <div>
+                </section>
+                <section class="education">
                     <h2>Education</h2>
-                    <ul>
-                        <li>
-                            <h4>.Net development at IT-Högskolan.</h4>
-                            <p>Starting year: <strong>2019</strong></p>
-                        </li>
-                        <li>
-                            <h4>Estet Musik at Rytmus musikergymnasium.</h4>
-                            <p>Starting year: <strong>2012</strong></p>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2>Other</h2>
-                    <ul>
-                        <li>Fluent in English and Swedish</li>
-                        <li>Standard Swedish Drivers Licence</li>
-                    </ul>
-                </div>
+                    <div class="edubox">
+                        <h4>.Net development at IT-Högskolan.</h4>
+                        <p>Starting year: <strong>2019</strong></p>
+                    </div>
+                    <div class="edubox">
+                        <h4>Estet Musik at Rytmus musikergymnasium.</h4>
+                        <p>Starting year: <strong>2012</strong></p>
+                    </div>
+                </section>
+                <section class="other">
+                    <div>
+                        <h2>Other</h2>
+                        <p>Fluent in English and Swedish</p>
+                        <p>Standard Swedish Drivers Licence</p>
+                    <div>
+                </section>
             </div>
         </main>
     </body>
